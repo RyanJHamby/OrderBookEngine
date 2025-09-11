@@ -2,23 +2,19 @@
 #pragma once
 
 #include "order.hpp"
-#include <cstdint>
-#include <optional>
-
-namespace ob {
+#include <vector>
+#include <immintrin.h>
 
 class OrderBook {
 public:
-    OrderBook() = default;
-    ~OrderBook() = default;
+    void add_order(const Order& order);
+    void match_orders();
 
-    bool add(const ::Order& order);
-    bool cancel(std::uint64_t orderId);
-    std::optional<::Order> bestBid() const;
-    std::optional<::Order> bestAsk() const;
-    std::size_t size() const noexcept;
+private:
+    std::vector<Order> buy_orders;
+    std::vector<Order> sell_orders;
+
+    void simd_price_match();
 };
-
-} // namespace ob
 
 

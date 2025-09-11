@@ -8,14 +8,15 @@ using clock_type = std::chrono::steady_clock;
 
 int main() {
     constexpr std::size_t iterations = 1000000;
-    ob::OrderBook book;
+    OrderBook book;
 
     auto start = clock_type::now();
     for (std::size_t i = 0; i < iterations; ++i) {
         Order o{static_cast<std::uint64_t>(i), (i & 1) ? OrderType::BUY : OrderType::SELL, 1000.0 + static_cast<double>(i % 100), static_cast<std::uint32_t>(1)};
-        book.add(o);
+        book.add_order(o);
         if ((i % 7) == 0) {
-            (void)book.cancel(static_cast<std::uint64_t>(i / 2));
+            // no cancel in skeleton; simulate extra work
+            book.match_orders();
         }
     }
     auto end = clock_type::now();

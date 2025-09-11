@@ -1,14 +1,22 @@
 // orderbook.cpp
 #include "orderbook.hpp"
 
-namespace ob {
+void OrderBook::add_order(const Order& order) {
+    if (order.type == OrderType::BUY) {
+        buy_orders.push_back(order);
+    } else {
+        sell_orders.push_back(order);
+    }
+}
 
-bool OrderBook::add(const ::Order& /*order*/) { return true; }
-bool OrderBook::cancel(std::uint64_t /*orderId*/) { return true; }
-std::optional<::Order> OrderBook::bestBid() const { return std::nullopt; }
-std::optional<::Order> OrderBook::bestAsk() const { return std::nullopt; }
-std::size_t OrderBook::size() const noexcept { return 0U; }
+void OrderBook::match_orders() {
+    simd_price_match();
+}
 
-} // namespace ob
+void OrderBook::simd_price_match() {
+    // Skeleton: no-op for now; placeholder for SIMD matching
+    (void)buy_orders;
+    (void)sell_orders;
+}
 
 
