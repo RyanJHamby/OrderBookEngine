@@ -18,3 +18,24 @@ public:
 } // namespace ob
 
 
+
+#include <vector>
+
+template<typename T>
+class ThreadLocalPool {
+public:
+    ThreadLocalPool(size_t size = 1024*1024) {
+        pool.reserve(size);
+    }
+
+    T* allocate() {
+        if (pool_index < pool.size()) return &pool[pool_index++];
+        pool.emplace_back();
+        return &pool[pool_index++];
+    }
+
+private:
+    std::vector<T> pool;
+    size_t pool_index = 0;
+};
+
