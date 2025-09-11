@@ -1,30 +1,31 @@
 // latency_test.cpp
 #include "orderbook.hpp"
 #include <chrono>
-#include <cstdint>
 #include <iostream>
-
-using clock_type = std::chrono::steady_clock;
+#include <random>
+#include <vector>
 
 int main() {
-    constexpr std::size_t iterations = 1000000;
-    OrderBook book;
+    OrderBook ob;
+    std::mt19937 rng(42);
+    std::uniform_real_distribution<double> price_dist(100, 200);
+    std::uniform_int_distribution<int> qty_dist(1, 100);
 
-    auto start = clock_type::now();
-    for (std::size_t i = 0; i < iterations; ++i) {
-        Order o{static_cast<std::uint64_t>(i), (i & 1) ? OrderType::BUY : OrderType::SELL, 1000.0 + static_cast<double>(i % 100), static_cast<std::uint32_t>(1)};
-        book.add_order(o);
-        if ((i % 7) == 0) {
-            // no cancel in skeleton; simulate extra work
-            book.match_orders();
-        }
+    const int NUM_ORDERS = 1'000'000;
+    std::vector<Order> orders;
+    orders.reserve(NUM_ORDERS);
+
+    for (int i = 0; i < NUM_ORDERS; ++i) {
+        orders.push_back(Order{static_cast<std::uint64_t>(i), i % 2 ? OrderType::BUY : OrderType::SELL, price_dist(rng), static_cast<std::uint32_t>(qty_dist(rng))});
     }
-    auto end = clock_type::now();
-    auto ns = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count();
-    double per_op_ns = static_cast<double>(ns) / static_cast<double>(iterations);
 
-    std::cout << "Ran " << iterations << " ops in " << ns << " ns (" << per_op_ns << " ns/op)\n";
-    return 0;
+    auto start = std::chrono::high_resolution_clock::now();
+    for (auto& order : orders) ob.add_order(order);
+    ob.match_orders();
+    auto end = std::chrono::high_resolution_clock::now();
+
+    double latency_us = std::chrono::duration_cast<std::chrono::nanoseconds>(end - start).count() / 1'000.0 / NUM_ORDERS;
+    std::cout << "Average latency per match: " << latency_us << " us\n";
 }
 
 
