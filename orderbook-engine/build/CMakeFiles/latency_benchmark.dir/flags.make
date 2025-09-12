@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/include
 
-CXX_FLAGSarm64 = -O3 -DNDEBUG -std=c++20 -flto=thin -arch arm64 -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Wdouble-promotion -Wshorten-64-to-32 -O3 -DNDEBUG -march=native
+CXX_FLAGSarm64 =  -O3 -march=native -pthread -O3 -DNDEBUG -std=gnu++20 -arch arm64
 
-CXX_FLAGS = -O3 -DNDEBUG -std=c++20 -flto=thin -arch arm64 -Wall -Wextra -Wpedantic -Wconversion -Wshadow -Wdouble-promotion -Wshorten-64-to-32 -O3 -DNDEBUG -march=native
+CXX_FLAGS =  -O3 -march=native -pthread -O3 -DNDEBUG -std=gnu++20 -arch arm64
 

@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/CMakeLists.txt"
+  "CMakeFiles/4.1.1/CMakeCCompiler.cmake"
   "CMakeFiles/4.1.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.1.1/CMakeSystem.cmake"
+  "/opt/homebrew/share/cmake/Modules/CMakeCInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
@@ -17,24 +19,25 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/opt/homebrew/share/cmake/Modules/CheckIPOSupported.cmake"
-  "/opt/homebrew/share/cmake/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in"
-  "/opt/homebrew/share/cmake/Modules/CheckIPOSupported/foo.cpp"
-  "/opt/homebrew/share/cmake/Modules/CheckIPOSupported/main.cpp"
+  "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Compiler/GNU.cmake"
-  "/opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake"
+  "/opt/homebrew/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+  "/opt/homebrew/share/cmake/Modules/Linker/AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Linker/AppleClang.cmake"
+  "/opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake"
+  "/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake"
+  "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-C.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
   "/opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake"
@@ -48,15 +51,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
-  "CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp"
-  "CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/orderbook.dir/DependInfo.cmake"
-  "CMakeFiles/orderbook-engine.dir/DependInfo.cmake"
   "CMakeFiles/latency_benchmark.dir/DependInfo.cmake"
   )

@@ -85,51 +85,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build//CMakeFiles/progress.marks
@@ -175,19 +130,6 @@ orderbook/fast:
 .PHONY : orderbook/fast
 
 #=============================================================================
-# Target rules for targets named orderbook-engine
-
-# Build rule for target.
-orderbook-engine: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 orderbook-engine
-.PHONY : orderbook-engine
-
-# fast build rule for target.
-orderbook-engine/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook-engine.dir/build.make CMakeFiles/orderbook-engine.dir/build
-.PHONY : orderbook-engine/fast
-
-#=============================================================================
 # Target rules for targets named latency_benchmark
 
 # Build rule for target.
@@ -229,7 +171,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook-engine.dir/build.make CMakeFiles/orderbook-engine.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -237,7 +179,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook-engine.dir/build.make CMakeFiles/orderbook-engine.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -245,7 +187,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook-engine.dir/build.make CMakeFiles/orderbook-engine.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/memory_pool.o: src/memory_pool.cpp.o
@@ -254,6 +196,7 @@ src/memory_pool.o: src/memory_pool.cpp.o
 # target to build an object file
 src/memory_pool.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/memory_pool.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o
 .PHONY : src/memory_pool.cpp.o
 
 src/memory_pool.i: src/memory_pool.cpp.i
@@ -262,6 +205,7 @@ src/memory_pool.i: src/memory_pool.cpp.i
 # target to preprocess a source file
 src/memory_pool.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/memory_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.i
 .PHONY : src/memory_pool.cpp.i
 
 src/memory_pool.s: src/memory_pool.cpp.s
@@ -270,6 +214,7 @@ src/memory_pool.s: src/memory_pool.cpp.s
 # target to generate assembly for a file
 src/memory_pool.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/memory_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.s
 .PHONY : src/memory_pool.cpp.s
 
 src/order.o: src/order.cpp.o
@@ -278,6 +223,7 @@ src/order.o: src/order.cpp.o
 # target to build an object file
 src/order.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/order.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/order.cpp.o
 .PHONY : src/order.cpp.o
 
 src/order.i: src/order.cpp.i
@@ -286,6 +232,7 @@ src/order.i: src/order.cpp.i
 # target to preprocess a source file
 src/order.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/order.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/order.cpp.i
 .PHONY : src/order.cpp.i
 
 src/order.s: src/order.cpp.s
@@ -294,6 +241,7 @@ src/order.s: src/order.cpp.s
 # target to generate assembly for a file
 src/order.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/order.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/order.cpp.s
 .PHONY : src/order.cpp.s
 
 src/orderbook.o: src/orderbook.cpp.o
@@ -302,6 +250,7 @@ src/orderbook.o: src/orderbook.cpp.o
 # target to build an object file
 src/orderbook.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/orderbook.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o
 .PHONY : src/orderbook.cpp.o
 
 src/orderbook.i: src/orderbook.cpp.i
@@ -310,6 +259,7 @@ src/orderbook.i: src/orderbook.cpp.i
 # target to preprocess a source file
 src/orderbook.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/orderbook.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.i
 .PHONY : src/orderbook.cpp.i
 
 src/orderbook.s: src/orderbook.cpp.s
@@ -318,6 +268,7 @@ src/orderbook.s: src/orderbook.cpp.s
 # target to generate assembly for a file
 src/orderbook.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/orderbook.dir/build.make CMakeFiles/orderbook.dir/src/orderbook.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.s
 .PHONY : src/orderbook.cpp.s
 
 # Help Target
@@ -327,14 +278,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... latency_benchmark"
 	@echo "... orderbook"
-	@echo "... orderbook-engine"
 	@echo "... benchmarks/latency_test.o"
 	@echo "... benchmarks/latency_test.i"
 	@echo "... benchmarks/latency_test.s"

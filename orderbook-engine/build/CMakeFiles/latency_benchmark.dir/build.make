@@ -72,10 +72,52 @@ include CMakeFiles/latency_benchmark.dir/flags.make
 CMakeFiles/latency_benchmark.dir/codegen:
 .PHONY : CMakeFiles/latency_benchmark.dir/codegen
 
+CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o: CMakeFiles/latency_benchmark.dir/flags.make
+CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
+CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o: CMakeFiles/latency_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o -MF CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o.d -o CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
+
+CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp > CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.i
+
+CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp -o CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.s
+
+CMakeFiles/latency_benchmark.dir/src/order.cpp.o: CMakeFiles/latency_benchmark.dir/flags.make
+CMakeFiles/latency_benchmark.dir/src/order.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
+CMakeFiles/latency_benchmark.dir/src/order.cpp.o: CMakeFiles/latency_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/latency_benchmark.dir/src/order.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/latency_benchmark.dir/src/order.cpp.o -MF CMakeFiles/latency_benchmark.dir/src/order.cpp.o.d -o CMakeFiles/latency_benchmark.dir/src/order.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
+
+CMakeFiles/latency_benchmark.dir/src/order.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/latency_benchmark.dir/src/order.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp > CMakeFiles/latency_benchmark.dir/src/order.cpp.i
+
+CMakeFiles/latency_benchmark.dir/src/order.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/latency_benchmark.dir/src/order.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp -o CMakeFiles/latency_benchmark.dir/src/order.cpp.s
+
+CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o: CMakeFiles/latency_benchmark.dir/flags.make
+CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
+CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o: CMakeFiles/latency_benchmark.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o -MF CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o.d -o CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
+
+CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp > CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.i
+
+CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp -o CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.s
+
 CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o: CMakeFiles/latency_benchmark.dir/flags.make
 CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/benchmarks/latency_test.cpp
 CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o: CMakeFiles/latency_benchmark.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o -MF CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o.d -o CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/benchmarks/latency_test.cpp
 
 CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.i: cmake_force
@@ -88,16 +130,21 @@ CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.s: cmake_force
 
 # Object files for target latency_benchmark
 latency_benchmark_OBJECTS = \
+"CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o" \
+"CMakeFiles/latency_benchmark.dir/src/order.cpp.o" \
+"CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o" \
 "CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o"
 
 # External object files for target latency_benchmark
 latency_benchmark_EXTERNAL_OBJECTS =
 
+latency_benchmark: CMakeFiles/latency_benchmark.dir/src/memory_pool.cpp.o
+latency_benchmark: CMakeFiles/latency_benchmark.dir/src/order.cpp.o
+latency_benchmark: CMakeFiles/latency_benchmark.dir/src/orderbook.cpp.o
 latency_benchmark: CMakeFiles/latency_benchmark.dir/benchmarks/latency_test.cpp.o
 latency_benchmark: CMakeFiles/latency_benchmark.dir/build.make
-latency_benchmark: liborderbook.a
 latency_benchmark: CMakeFiles/latency_benchmark.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable latency_benchmark"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable latency_benchmark"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/latency_benchmark.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

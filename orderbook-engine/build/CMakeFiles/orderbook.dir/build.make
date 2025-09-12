@@ -72,10 +72,24 @@ include CMakeFiles/orderbook.dir/flags.make
 CMakeFiles/orderbook.dir/codegen:
 .PHONY : CMakeFiles/orderbook.dir/codegen
 
+CMakeFiles/orderbook.dir/src/main.cpp.o: CMakeFiles/orderbook.dir/flags.make
+CMakeFiles/orderbook.dir/src/main.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp
+CMakeFiles/orderbook.dir/src/main.cpp.o: CMakeFiles/orderbook.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/orderbook.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/main.cpp.o -MF CMakeFiles/orderbook.dir/src/main.cpp.o.d -o CMakeFiles/orderbook.dir/src/main.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp
+
+CMakeFiles/orderbook.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp > CMakeFiles/orderbook.dir/src/main.cpp.i
+
+CMakeFiles/orderbook.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp -o CMakeFiles/orderbook.dir/src/main.cpp.s
+
 CMakeFiles/orderbook.dir/src/memory_pool.cpp.o: CMakeFiles/orderbook.dir/flags.make
 CMakeFiles/orderbook.dir/src/memory_pool.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
 CMakeFiles/orderbook.dir/src/memory_pool.cpp.o: CMakeFiles/orderbook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/orderbook.dir/src/memory_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderbook.dir/src/memory_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/memory_pool.cpp.o -MF CMakeFiles/orderbook.dir/src/memory_pool.cpp.o.d -o CMakeFiles/orderbook.dir/src/memory_pool.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
 
 CMakeFiles/orderbook.dir/src/memory_pool.cpp.i: cmake_force
@@ -89,7 +103,7 @@ CMakeFiles/orderbook.dir/src/memory_pool.cpp.s: cmake_force
 CMakeFiles/orderbook.dir/src/order.cpp.o: CMakeFiles/orderbook.dir/flags.make
 CMakeFiles/orderbook.dir/src/order.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
 CMakeFiles/orderbook.dir/src/order.cpp.o: CMakeFiles/orderbook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/orderbook.dir/src/order.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/orderbook.dir/src/order.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/order.cpp.o -MF CMakeFiles/orderbook.dir/src/order.cpp.o.d -o CMakeFiles/orderbook.dir/src/order.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
 
 CMakeFiles/orderbook.dir/src/order.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/orderbook.dir/src/order.cpp.s: cmake_force
 CMakeFiles/orderbook.dir/src/orderbook.cpp.o: CMakeFiles/orderbook.dir/flags.make
 CMakeFiles/orderbook.dir/src/orderbook.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
 CMakeFiles/orderbook.dir/src/orderbook.cpp.o: CMakeFiles/orderbook.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/orderbook.dir/src/orderbook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/orderbook.dir/src/orderbook.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/orderbook.dir/src/orderbook.cpp.o -MF CMakeFiles/orderbook.dir/src/orderbook.cpp.o.d -o CMakeFiles/orderbook.dir/src/orderbook.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
 
 CMakeFiles/orderbook.dir/src/orderbook.cpp.i: cmake_force
@@ -116,6 +130,7 @@ CMakeFiles/orderbook.dir/src/orderbook.cpp.s: cmake_force
 
 # Object files for target orderbook
 orderbook_OBJECTS = \
+"CMakeFiles/orderbook.dir/src/main.cpp.o" \
 "CMakeFiles/orderbook.dir/src/memory_pool.cpp.o" \
 "CMakeFiles/orderbook.dir/src/order.cpp.o" \
 "CMakeFiles/orderbook.dir/src/orderbook.cpp.o"
@@ -123,17 +138,17 @@ orderbook_OBJECTS = \
 # External object files for target orderbook
 orderbook_EXTERNAL_OBJECTS =
 
-liborderbook.a: CMakeFiles/orderbook.dir/src/memory_pool.cpp.o
-liborderbook.a: CMakeFiles/orderbook.dir/src/order.cpp.o
-liborderbook.a: CMakeFiles/orderbook.dir/src/orderbook.cpp.o
-liborderbook.a: CMakeFiles/orderbook.dir/build.make
-liborderbook.a: CMakeFiles/orderbook.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library liborderbook.a"
-	$(CMAKE_COMMAND) -P CMakeFiles/orderbook.dir/cmake_clean_target.cmake
+orderbook: CMakeFiles/orderbook.dir/src/main.cpp.o
+orderbook: CMakeFiles/orderbook.dir/src/memory_pool.cpp.o
+orderbook: CMakeFiles/orderbook.dir/src/order.cpp.o
+orderbook: CMakeFiles/orderbook.dir/src/orderbook.cpp.o
+orderbook: CMakeFiles/orderbook.dir/build.make
+orderbook: CMakeFiles/orderbook.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable orderbook"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderbook.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/orderbook.dir/build: liborderbook.a
+CMakeFiles/orderbook.dir/build: orderbook
 .PHONY : CMakeFiles/orderbook.dir/build
 
 CMakeFiles/orderbook.dir/clean:
