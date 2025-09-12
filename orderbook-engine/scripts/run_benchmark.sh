@@ -75,6 +75,10 @@ echo "Instance is running at: $PUBLIC_IP"
 
 # 7️⃣ Wait until instance auto-shuts down (after cloud-init benchmark)
 echo "Waiting for instance to terminate after benchmark..."
-aws ec2 wait instance-terminated --instance-ids $INSTANCE_ID --region $REGION
+aws ec2 wait instance-terminated --instance-ids $INSTANCE_ID --region $REGION --cli-read-timeout 300 || {
+    echo "Instance stuck in stopping state, force terminating..."
+    aws ec2 terminate-instances --instance-ids $INSTANCE_ID --region $REGION --force
+    aws ec2 wait instance-terminated --instance-ids $INSTANCE_ID --region $REGION
+}
 
 echo "Benchmark complete. Instance terminated."
