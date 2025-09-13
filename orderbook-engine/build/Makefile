@@ -142,6 +142,19 @@ latency_benchmark/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/latency_benchmark.dir/build.make CMakeFiles/latency_benchmark.dir/build
 .PHONY : latency_benchmark/fast
 
+#=============================================================================
+# Target rules for targets named orderbook_tests
+
+# Build rule for target.
+orderbook_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 orderbook_tests
+.PHONY : orderbook_tests
+
+# fast build rule for target.
+orderbook_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/build
+.PHONY : orderbook_tests/fast
+
 benchmarks/latency_test.o: benchmarks/latency_test.cpp.o
 .PHONY : benchmarks/latency_test.o
 
@@ -281,6 +294,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... latency_benchmark"
 	@echo "... orderbook"
+	@echo "... orderbook_tests"
 	@echo "... benchmarks/latency_test.o"
 	@echo "... benchmarks/latency_test.i"
 	@echo "... benchmarks/latency_test.s"

@@ -15,4 +15,7 @@ list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
 add_executable(orderbook src/main.cpp ${SOURCES})
 add_executable(latency_benchmark ${SOURCES} benchmarks/latency_test.cpp)
 
+# Add tests subdirectory
+add_subdirectory(tests)
+
 
