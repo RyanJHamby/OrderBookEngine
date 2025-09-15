@@ -10,6 +10,7 @@ This project implements a minimal, high-performance order book engine in C++ des
 - C++20 compiler
 - CMake
 - GNU Make
+- Google Test (for unit tests)
 
 **Steps:**
 ```bash
@@ -24,6 +25,23 @@ This script performs the following:
 - Builds the order book engine and benchmark using parallel jobs
 - Runs the main order book executable for validation
 - Executes the latency benchmark and saves results in `build/benchmark_results.txt`
+
+## Running Unit Tests
+
+The project includes comprehensive unit tests using Google Test framework:
+
+```bash
+chmod +x scripts/run_tests.sh
+./scripts/run_tests.sh
+```
+
+**Test Coverage:**
+- **Order Tests**: Order creation, type validation, comparison operations
+- **OrderBook Tests**: Order addition, matching, stress testing with 1000 orders
+- **LockFreeQueue Tests**: Push/pop operations, circular behavior, multiple order handling
+- **MemoryPool Tests**: Thread-local allocation, stress testing with 2000 allocations
+
+All tests run in Debug mode for better error detection and validation.
 
 ## AWS EC2 Spot Benchmarking
 
@@ -83,10 +101,17 @@ orderbook-engine/
 │   └── memory_pool.cpp    # Memory pool implementation
 ├── benchmarks/
 │   └── latency_test.cpp   # Performance benchmark
+├── tests/
+│   ├── test_order.cpp     # Order struct unit tests
+│   ├── test_orderbook.cpp # OrderBook class unit tests
+│   ├── test_order_queue.cpp # LockFreeQueue unit tests
+│   ├── test_memory_pool.cpp # MemoryPool unit tests
+│   └── CMakeLists.txt     # Test build configuration
 ├── scripts/
 │   ├── run_benchmark.sh   # AWS EC2 spot instance launcher
 │   ├── cloud_init.sh      # EC2 instance initialization
-│   └── build_and_run_benchmark.sh # Local build and benchmark
+│   ├── build_and_run_benchmark.sh # Local build and benchmark
+│   └── run_tests.sh       # Unit test runner
 ├── CMakeLists.txt         # Build configuration
 └── README.md              # This file
 ```
