@@ -12,6 +12,10 @@ set(TEST_SOURCES
     test_orderbook.cpp
     test_order_queue.cpp
     test_memory_pool.cpp
+    test_integration.cpp
+    test_performance.cpp
+    test_edge_cases.cpp
+    test_concurrency.cpp
 )
 
 # Create test executable

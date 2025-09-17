@@ -128,10 +128,66 @@ tests/CMakeFiles/orderbook_tests.dir/test_memory_pool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_memory_pool.cpp.s"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_memory_pool.cpp -o CMakeFiles/orderbook_tests.dir/test_memory_pool.cpp.s
 
+tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_integration.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_integration.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_integration.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_integration.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_integration.cpp.i"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_integration.cpp > CMakeFiles/orderbook_tests.dir/test_integration.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_integration.cpp.s"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_integration.cpp -o CMakeFiles/orderbook_tests.dir/test_integration.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_performance.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_performance.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_performance.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_performance.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_performance.cpp.i"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_performance.cpp > CMakeFiles/orderbook_tests.dir/test_performance.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_performance.cpp.s"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_performance.cpp -o CMakeFiles/orderbook_tests.dir/test_performance.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_edge_cases.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_edge_cases.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.i"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_edge_cases.cpp > CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.s"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_edge_cases.cpp -o CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.s
+
+tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
+tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_concurrency.cpp
+tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o -MF CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o.d -o CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_concurrency.cpp
+
+tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.i"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_concurrency.cpp > CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.i
+
+tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.s"
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/tests/test_concurrency.cpp -o CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.s
+
 tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
 tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp
 tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o -MF CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o.d -o CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/main.cpp
 
 tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.i: cmake_force
@@ -145,7 +201,7 @@ tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.s: cmake_force
 tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
 tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
 tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o -MF CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o.d -o CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/memory_pool.cpp
 
 tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.i: cmake_force
@@ -159,7 +215,7 @@ tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.s: cmake_force
 tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
 tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
 tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o -MF CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o.d -o CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/order.cpp
 
 tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.i: cmake_force
@@ -173,7 +229,7 @@ tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.s: cmake_force
 tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o: tests/CMakeFiles/orderbook_tests.dir/flags.make
 tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o: /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
 tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o: tests/CMakeFiles/orderbook_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o -MF CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o.d -o CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.o -c /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/src/orderbook.cpp
 
 tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.i: cmake_force
@@ -190,6 +246,10 @@ orderbook_tests_OBJECTS = \
 "CMakeFiles/orderbook_tests.dir/test_orderbook.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_order_queue.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/test_memory_pool.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_integration.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_performance.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o" \
+"CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o" \
 "CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o" \
@@ -202,6 +262,10 @@ tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_order.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_orderbook.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_order_queue.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_memory_pool.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o
+tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/__/src/main.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/__/src/memory_pool.cpp.o
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/__/src/order.cpp.o
@@ -210,7 +274,7 @@ tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/build.make
 tests/orderbook_tests: /opt/homebrew/lib/libgtest_main.a
 tests/orderbook_tests: /opt/homebrew/lib/libgtest.a
 tests/orderbook_tests: tests/CMakeFiles/orderbook_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable orderbook_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable orderbook_tests"
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/orderbook_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

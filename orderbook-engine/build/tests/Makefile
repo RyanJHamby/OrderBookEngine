@@ -226,6 +226,78 @@ __/src/orderbook.cpp.s:
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/__/src/orderbook.cpp.s
 .PHONY : __/src/orderbook.cpp.s
 
+test_concurrency.o: test_concurrency.cpp.o
+.PHONY : test_concurrency.o
+
+# target to build an object file
+test_concurrency.cpp.o:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.o
+.PHONY : test_concurrency.cpp.o
+
+test_concurrency.i: test_concurrency.cpp.i
+.PHONY : test_concurrency.i
+
+# target to preprocess a source file
+test_concurrency.cpp.i:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.i
+.PHONY : test_concurrency.cpp.i
+
+test_concurrency.s: test_concurrency.cpp.s
+.PHONY : test_concurrency.s
+
+# target to generate assembly for a file
+test_concurrency.cpp.s:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_concurrency.cpp.s
+.PHONY : test_concurrency.cpp.s
+
+test_edge_cases.o: test_edge_cases.cpp.o
+.PHONY : test_edge_cases.o
+
+# target to build an object file
+test_edge_cases.cpp.o:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.o
+.PHONY : test_edge_cases.cpp.o
+
+test_edge_cases.i: test_edge_cases.cpp.i
+.PHONY : test_edge_cases.i
+
+# target to preprocess a source file
+test_edge_cases.cpp.i:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.i
+.PHONY : test_edge_cases.cpp.i
+
+test_edge_cases.s: test_edge_cases.cpp.s
+.PHONY : test_edge_cases.s
+
+# target to generate assembly for a file
+test_edge_cases.cpp.s:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_edge_cases.cpp.s
+.PHONY : test_edge_cases.cpp.s
+
+test_integration.o: test_integration.cpp.o
+.PHONY : test_integration.o
+
+# target to build an object file
+test_integration.cpp.o:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.o
+.PHONY : test_integration.cpp.o
+
+test_integration.i: test_integration.cpp.i
+.PHONY : test_integration.i
+
+# target to preprocess a source file
+test_integration.cpp.i:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.i
+.PHONY : test_integration.cpp.i
+
+test_integration.s: test_integration.cpp.s
+.PHONY : test_integration.s
+
+# target to generate assembly for a file
+test_integration.cpp.s:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_integration.cpp.s
+.PHONY : test_integration.cpp.s
+
 test_memory_pool.o: test_memory_pool.cpp.o
 .PHONY : test_memory_pool.o
 
@@ -322,6 +394,30 @@ test_orderbook.cpp.s:
 	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_orderbook.cpp.s
 .PHONY : test_orderbook.cpp.s
 
+test_performance.o: test_performance.cpp.o
+.PHONY : test_performance.o
+
+# target to build an object file
+test_performance.cpp.o:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.o
+.PHONY : test_performance.cpp.o
+
+test_performance.i: test_performance.cpp.i
+.PHONY : test_performance.i
+
+# target to preprocess a source file
+test_performance.cpp.i:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.i
+.PHONY : test_performance.cpp.i
+
+test_performance.s: test_performance.cpp.s
+.PHONY : test_performance.s
+
+# target to generate assembly for a file
+test_performance.cpp.s:
+	cd /Users/ryanhamby/Documents/OrderBookEngine/orderbook-engine/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/orderbook_tests.dir/build.make tests/CMakeFiles/orderbook_tests.dir/test_performance.cpp.s
+.PHONY : test_performance.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -343,6 +439,15 @@ help:
 	@echo "... __/src/orderbook.o"
 	@echo "... __/src/orderbook.i"
 	@echo "... __/src/orderbook.s"
+	@echo "... test_concurrency.o"
+	@echo "... test_concurrency.i"
+	@echo "... test_concurrency.s"
+	@echo "... test_edge_cases.o"
+	@echo "... test_edge_cases.i"
+	@echo "... test_edge_cases.s"
+	@echo "... test_integration.o"
+	@echo "... test_integration.i"
+	@echo "... test_integration.s"
 	@echo "... test_memory_pool.o"
 	@echo "... test_memory_pool.i"
 	@echo "... test_memory_pool.s"
@@ -355,6 +460,9 @@ help:
 	@echo "... test_orderbook.o"
 	@echo "... test_orderbook.i"
 	@echo "... test_orderbook.s"
+	@echo "... test_performance.o"
+	@echo "... test_performance.i"
+	@echo "... test_performance.s"
 .PHONY : help
 
 
